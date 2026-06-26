@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book your stay at Silver Oak Hotel.">
+    <meta name="keywords" content="hotel booking, Silver Oak Hotel, room reservation">
+    <title>Silver Oak Hotel | Booking</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Silver Oak Hotel</div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rooms.html">Rooms</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+
+    <section class="section">
+        <h1>Room Booking</h1>
+
+        <form onsubmit="return validateForm()">
+
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" placeholder="Enter phone number"><br><br>
+
+            <label for="room">Select Room</label><br>
+            <select id="room">
+                <option>Deluxe Room</option>
+                <option>Premium Room</option>
+                <option>Suite Room</option>
+            </select><br><br>
+
+            <label for="checkin">Check-In Date</label><br>
+            <input type="date" id="checkin"><br><br>
+
+            <label for="checkout">Check-Out Date</label><br>
+            <input type="date" id="checkout"><br><br>
+
+            <button type="submit">Book Now</button>
+
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2026 Silver Oak Hotel. All Rights Reserved.</p>
+        <p>Phone: +91 9876543210 | Email: info@silveroakhotel.com</p>
+    </footer>
+
+</body>
+</html>
